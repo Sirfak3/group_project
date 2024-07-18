@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Login</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div class="containerlogin">
+        <form type="POST" class="login" id="formlogin">
+            <h1 id="titulo">Conecte-se ao Espaço</h1>
+            <input type="text" id="user" maxlength="50" placeholder="User / Email">
+            <div class="divpass">
+                <input type="password" id="password" minlength="8" maxlength="15" placeholder="Senha">
+                <input type="checkbox" id="viewpass">
+                <label for="viewpass">
+                    <i id="magicEye" class="fa fa-eye-slash"></i>
+                </label>
+            </div>
+            <a href="recoveypass.html">Esqueceu a senha?</a>
+            <button id="sendform" onclick="acessar(event)">Acessar</button>
+        </form>
+    </div>
+</body>
+<script src="./src/script/main.js"></script>
+<script src="./src/script/connection.js"></script>
+</html>
